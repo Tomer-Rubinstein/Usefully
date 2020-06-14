@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "52218510913",
+    "firebase_url": "https://usefully-35a88.firebaseio.com",
+    "project_id": "usefully-35a88",
+    "storage_bucket": "usefully-35a88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52218510913:android:b49327c59fa653d02f50c0",
+        "android_client_info": {
+          "package_name": "com.tomeruby.iusefully"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52218510913-l60idk9mjdm8ed3u1s81c8dh2qt68bac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tomeruby.iusefully",
+            "certificate_hash": "a53e9ff5136a50e525f67c283e584f34e870c792"
+          }
+        },
+        {
+          "client_id": "52218510913-9apoqk15h514nbjhd4rosvmc1vfjlnns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tomeruby.iusefully",
+            "certificate_hash": "475e67b6695ba2a78d7b8fac8083649afc6a24e3"
+          }
+        },
+        {
+          "client_id": "52218510913-j4siv4st0h4djcjntbr184jlv3ccjies.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzpsyM-5-yUbiht8WZy7_o1QhtuXcZMOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52218510913-j4siv4st0h4djcjntbr184jlv3ccjies.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+name: iusefully
+description: Be more productive
+
+version: 16.0+16
+
+module:
+  androidX: true
+
+environment:
+  sdk: ">=2.5.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  google_sign_in: 4.5.1
+  firebase_auth: 0.16.1
+  firebase_core: ^0.4.0+8
+  firebase_analytics: ^5.0.14
+  cloud_firestore: ^0.13.6
+
+
+
+  rxdart: 0.20.0
+  cupertino_icons: ^0.1.2
+  provider: ^4.0.4
+  flutter_phoenix: "^0.1.0"
+  animations: ^1.0.0
+  curved_navigation_bar: ^0.3.2
+  flutter_spinkit: "^4.1.2"
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - images/google.png
+    - images/login.png
+    - images/human1.png
+    - images/onboarding0.png
+    - images/onboarding1.png
+    - images/onboarding2.png
+    - images/login-pic.png
+
+  fonts:
+    - family: RobotoMono
+      fonts:
+        - asset: fonts/RobotoMono-Bold.ttf
+    - family: NotoSans
+      fonts:
+        - asset: fonts/NotoSans-Regular.ttf
+
