@@ -1,16 +1,11 @@
-# iusefully
+# Usefully
 
-A new Flutter project.
+Be More Productive
 
-## Getting Started
+## How does it work?
 
-This project is a starting point for a Flutter application.
+You write down your tasks, you specify for each task a reward. When you complete the task
+you will be able to do the reward. This app is based on the technique called NoFap. It's a scientific technique
+which gives you more motivation to do hard tasks, because you reward yourself after each task.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
