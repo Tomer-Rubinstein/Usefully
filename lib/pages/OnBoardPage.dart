@@ -47,7 +47,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 26, bottom: 70),
+                padding: const EdgeInsets.only(left: 26),
                 child: Tooltip(
                   message: "Random Task",
                   child: MaterialButton(
@@ -55,13 +55,14 @@ class _OnBoardPageState extends State<OnBoardPage> {
                       Route route = PageSlideAnimation(builder: (context) => TicketPage());
                       Navigator.push(context, route);
                     },
-                    color: Colors.white,
+                    color: Color(0xFF5036D5),
                     elevation: 5,
-                    splashColor: Colors.grey,
+                    splashColor: Colors.white,
                     shape: StadiumBorder(),
                     child: Text("Ticket", style: TextStyle(
                       fontSize: 18,
-                      fontFamily: "RobotoMono"
+                      fontFamily: "RobotoMono",
+                      color: Colors.white
                     )),
                   ),
                 ),
@@ -74,11 +75,11 @@ class _OnBoardPageState extends State<OnBoardPage> {
                     Route route = PageSlideAnimation(builder: (context) => NewTaskPageView());
                     Navigator.push(context, route);
                   },
-                  color: Colors.white,
+                  color: Color(0xFF5036D5),
                   elevation: 5,
-                  splashColor: Colors.grey,
+                  splashColor: Colors.white,
                   shape: StadiumBorder(),
-                  child: Icon(Icons.add, size: 32),
+                  child: Icon(Icons.add, size: 32, color: Colors.white,),
                 ),
               ),
             ],

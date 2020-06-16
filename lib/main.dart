@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:iusefully/Ticket/Ticket_Page.dart';
 import 'package:iusefully/pages/LoginPage.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -33,7 +32,7 @@ class _MainpageState extends State<Mainpage> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          body: LoginPage(), // LoginPage
+          body: LoginPage(),
         )
       )
     );

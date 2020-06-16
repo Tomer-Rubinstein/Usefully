@@ -22,17 +22,33 @@ class _MainfileState extends State<Mainfile> {
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.light
     ));
+    // Color(0xFF5B16D0),
     
     return Scaffold(
-      bottomNavigationBar: CurvedNavigationBar(
-        animationDuration: Duration(milliseconds: 400),
-        animationCurve: Curves.easeInOut,
-        backgroundColor: Color(0xFF5B16D0),
-        index: Mainfile.currentIndex,
-        height: 60,
-        items: <Widget>[
-          Icon(Icons.assignment, size: 38),
-          Icon(Icons.cake, size: 38)
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        currentIndex: Mainfile.currentIndex,
+        selectedFontSize: 17,
+        unselectedFontSize: 15,
+        selectedIconTheme: IconThemeData(
+          size: 18,
+        ),
+        unselectedIconTheme: IconThemeData(
+          size: 12
+        ),
+        selectedItemColor: Color(0xFF5B16D0),
+        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold, fontFamily: "NotoSans"),
+        unselectedLabelStyle: TextStyle(fontFamily: "NotoSans"),
+        elevation: 20,
+        items: [
+          BottomNavigationBarItem(
+            title: Text("On Board"),
+            icon: Icon(Icons.assignment, size: 38),
+          ),
+          BottomNavigationBarItem(
+            title: Text("Rewards"),
+            icon: Icon(Icons.cake, size: 38),
+          ),
         ],
         onTap: (index){
           setState(() {
