@@ -49,6 +49,7 @@ flutter:
     - images/onboarding1.png
     - images/onboarding2.png
     - images/login-pic.png
+    - images/ticket_pic.png
 
   fonts:
     - family: RobotoMono

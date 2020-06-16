@@ -20,6 +20,7 @@ class ToDoCard extends StatelessWidget{
   Widget build(BuildContext context) {
     var user = Provider.of<FirebaseUser>(context);
     return Dismissible(
+      direction: DismissDirection.startToEnd,
       key: UniqueKey(),
       onDismissed: (direction){
         for(int x=0; x < titles.length; x++){

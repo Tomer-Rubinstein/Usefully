@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:iusefully/NewTask/NewTask_PageView.dart';
 import 'package:iusefully/PageSlideAnimation.dart';
+import 'package:iusefully/Ticket/Ticket_Page.dart';
 import 'package:iusefully/ToDoCard.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -41,16 +42,46 @@ class _OnBoardPageState extends State<OnBoardPage> {
             findUser(_length);
           });
         return Scaffold(
-          floatingActionButton: MaterialButton(
-            onPressed: (){
-              Route route = PageSlideAnimation(builder: (context) => NewTaskPageView());
-              Navigator.push(context, route);
-            },
-            color: Colors.white,
-            elevation: 5,
-            splashColor: Colors.grey,
-            shape: StadiumBorder(),
-            child: Icon(Icons.add, size: 32),
+          floatingActionButton: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(left: 26, bottom: 70),
+                child: Tooltip(
+                  message: "Random Task",
+                  child: MaterialButton(
+                    onPressed: (){
+                      Route route = PageSlideAnimation(builder: (context) => TicketPage());
+                      Navigator.push(context, route);
+                    },
+                    color: Colors.white,
+                    elevation: 5,
+                    splashColor: Colors.grey,
+                    shape: StadiumBorder(),
+                    child: Text("Ticket", style: TextStyle(
+                      fontSize: 18,
+                      fontFamily: "RobotoMono"
+                    )),
+                  ),
+                ),
+              ),
+              Container(),
+              Tooltip(
+                message: "New Task",
+                child: MaterialButton(
+                  onPressed: (){
+                    Route route = PageSlideAnimation(builder: (context) => NewTaskPageView());
+                    Navigator.push(context, route);
+                  },
+                  color: Colors.white,
+                  elevation: 5,
+                  splashColor: Colors.grey,
+                  shape: StadiumBorder(),
+                  child: Icon(Icons.add, size: 32),
+                ),
+              ),
+            ],
           ),
           backgroundColor: Colors.white,
           body: Container(

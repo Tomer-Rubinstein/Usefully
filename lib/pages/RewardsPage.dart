@@ -12,9 +12,7 @@ class RewardsPage extends StatefulWidget{
 
 class _RewardsPageState extends State<RewardsPage> {
   int _index = 0;
-
   int _length = 0;
-
   bool randomReward = false;
 
   @override
