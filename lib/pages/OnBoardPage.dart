@@ -55,7 +55,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
                       Route route = PageSlideAnimation(builder: (context) => TicketPage());
                       Navigator.push(context, route);
                     },
-                    color: Color(0xFF5036D5),
+                    color: Colors.grey[400],
                     elevation: 5,
                     splashColor: Colors.white,
                     shape: StadiumBorder(),
@@ -75,7 +75,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
                     Route route = PageSlideAnimation(builder: (context) => NewTaskPageView());
                     Navigator.push(context, route);
                   },
-                  color: Color(0xFF5036D5),
+                  color: Colors.grey[400],
                   elevation: 5,
                   splashColor: Colors.white,
                   shape: StadiumBorder(),
