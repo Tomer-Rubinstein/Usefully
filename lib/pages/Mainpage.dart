@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:iusefully/PageSlideAnimation.dart';
+import 'package:iusefully/auth.dart';
 import 'package:iusefully/pages/OnBoardPage.dart';
 import 'package:iusefully/pages/RewardsPage.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
@@ -24,6 +26,7 @@ class _MainfileState extends State<Mainfile> {
     ));
     // Color(0xFF5B16D0),
     
+
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,

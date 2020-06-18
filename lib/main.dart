@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:iusefully/DailyLog/DailyLogPage.dart';
 import 'package:iusefully/pages/LoginPage.dart';
+import 'package:iusefully/pages/Mainpage.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -21,7 +23,7 @@ class _MainpageState extends State<Mainpage> {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.dark
+        statusBarIconBrightness: Brightness.light // was dark
     ));
     return MultiProvider(
       providers: [
@@ -32,7 +34,7 @@ class _MainpageState extends State<Mainpage> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          body: LoginPage(),
+          body: LoginPage(), //DailyLogPage
         )
       )
     );

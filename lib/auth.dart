@@ -69,6 +69,9 @@ class AuthService{
       "titles": titles,
       "contents": contents,
       "rewards": rewards,
+
+      "log_titles": log_titles,
+      "log_rewards": log_rewards,
     });
   }
 
@@ -79,6 +82,8 @@ class AuthService{
       "titles": titles,
       "contents": contents,
       "rewards": rewards,
+      "log_titles": log_titles,
+      "log_rewards": log_rewards,
     }, merge: true);
   }
 

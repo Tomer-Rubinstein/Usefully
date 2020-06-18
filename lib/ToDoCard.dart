@@ -28,6 +28,9 @@ class ToDoCard extends StatelessWidget{
             _index = x;
           }
         }
+        log_titles.add(titles[_index]);
+        log_rewards.add(rewards[_index]);
+
         titles.removeAt(_index);
         contents.removeAt(_index);
         showDialog(

@@ -16,6 +16,9 @@ List<String> titles = [];
 List<String> contents = [];
 List<String> rewards = [];
 
+List<String> log_rewards = [];
+List<String> log_titles = [];
+
 
 int currentIndex = 0;
 bool isLast = false;

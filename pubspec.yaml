@@ -50,6 +50,7 @@ flutter:
     - images/onboarding2.png
     - images/login-pic.png
     - images/ticket_pic.png
+    - images/daily-log.png
 
   fonts:
     - family: RobotoMono
