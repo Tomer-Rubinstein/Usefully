@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iusefully/pages/OnBoardPage.dart';
 import 'package:iusefully/pages/RewardsPage.dart';
+import 'package:flutter/scheduler.dart';
 
 class Mainfile extends StatefulWidget{
   static int currentIndex = 0;
@@ -14,10 +15,12 @@ class _MainfileState extends State<Mainfile> {
   PageController _pageController = PageController(
     initialPage: Mainfile.currentIndex,
   );
-
+  var setStateCheck = true;
   @override
   Widget build(BuildContext context) {
-    
+    if(setStateCheck==true){
+      SchedulerBinding.instance.addPostFrameCallback((_) => setState(() {setStateCheck=false;}));
+    }
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.light

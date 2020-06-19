@@ -10,6 +10,7 @@ class AutoLoginPage extends StatefulWidget {
 }
 
 class _AutoLoginPageState extends State<AutoLoginPage> {
+  
   @override
   Widget build(BuildContext context) {
     authService.googleSignIn().whenComplete(() {
