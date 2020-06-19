@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:iusefully/NewTask/NewTask_PageView.dart';
-import 'package:iusefully/widgets/styles.dart';
+
 
 class DailyLogCard extends StatelessWidget {
   final String title;
   final List<String> log_titles;
   final List<String> log_rewards;
   final bool isTitles;
-  TextStyle _contentStyle = TextStyle(fontSize: 18, fontFamily: "NotoSans");
+  final TextStyle _contentStyle = TextStyle(fontSize: 18, fontFamily: "NotoSans");
   DailyLogCard(this.title, this.log_titles, this.log_rewards, this.isTitles);
 
   @override

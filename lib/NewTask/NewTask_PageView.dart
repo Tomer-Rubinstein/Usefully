@@ -2,7 +2,6 @@ import 'package:animations/animations.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-//import 'package:iusefully/Dialog.dart';
 import 'package:iusefully/NewTask/NewTask_PageModel.dart';
 import 'package:flutter/services.dart';
 import 'package:iusefully/auth.dart';

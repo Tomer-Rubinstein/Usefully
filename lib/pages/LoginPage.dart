@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
       vsync: this,
       duration: Duration(milliseconds: 1000)
     );
-    final animation = Tween(begin: 0.0, end: 1.0).animate(controller);
+    //final animation = Tween(begin: 0.0, end: 1.0).animate(controller);
     controller.forward();
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarIconBrightness: Brightness.light,

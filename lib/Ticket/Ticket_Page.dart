@@ -37,6 +37,7 @@ class _TicketPageState extends State<TicketPage> {
         onPressed: () {
           
           if(chipTitles.isNotEmpty){
+            print("hey: $chipTitles");
             var title = chipTitles[_random.nextInt(chipTitles.length)];
             var result = [];
             if(title == "Sport"){
@@ -53,16 +54,20 @@ class _TicketPageState extends State<TicketPage> {
               var activities = {
                 "Home Work": "Are you sure you have no homework left?",
                 "Learn": "Study for an upcoming exam",
+                "Learn A New Language": "Study a foreign language for 30 minutes",
+                "Research": "Research about something that interested you",
               };
               result = randomActivity(activities);
             }
 
             if(title == "Mission"){
               var activities = {
-                "Research": "Research about something that interested you",
                 "Go For It!": "Start something that you never started!",
-                "Learn A New Language": "Study a foreign language for 30 minutes",
-                "Read": "Read a short article about a subject that you like"
+                "Read": "Read a short article about a subject that you like",
+                "Clean": "Clean your environment",
+                "No Junk Food": "Do not eat junk food for one day",
+                "Meditation": "Meditate for 7 minutes",
+                "New Skill": "Teach yourself a new skill"
               };
               result = randomActivity(activities);
             }
@@ -70,16 +75,17 @@ class _TicketPageState extends State<TicketPage> {
             if(title == "Contact"){
               var activities = {
                 "Make a Call": "Call to one of your close ones",
-                "Invite a Friend": "Go to hang out with your friends",
+                "Invite a Friend": "Invite over one of your friends",
               };
               result = randomActivity(activities);
             }
 
             titles.add(result[0]);
             contents.add(result[1]);
-            List<String> _customRewards = ["Do nothing for 10 seconds.", "Do one of your hobbies for 30 minutes", "1 Episode of Favorite TV Show"];
+            List<String> _customRewards = ["Do nothing for 10 minutes.", "Do one of your hobbies for 30 minutes", "1 Episode of Favorite TV Show", "Eat your favorite meal"];
             String reward = _customRewards[_random.nextInt(_customRewards.length)];
             rewards.add(reward);
+            chipTitles = ["Sport", "School", "Mission", "Contact"];
             authService.createNewTask(user);
 
             Navigator.of(context).pop();
@@ -124,7 +130,7 @@ class _TicketPageState extends State<TicketPage> {
                             size: 28,
                           ),
                           onTap: () {
-                            showDialog(context: context, builder: (BuildContext context) => CustomDialog(title: "Help", content: "You can click the chips to remove them from the process of generating a random task",));
+                            showDialog(context: context, builder: (BuildContext context) => CustomDialog(title: "Help", content: "You can click the chips to remove them from the process of generating a random task. Keep in mind that you must leave at least one chip available.",));
                           }),
                     ),
                     Container(),

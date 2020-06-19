@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:iusefully/auth.dart';
 import 'package:iusefully/NewTask/NewTask_PageView.dart';
 import 'package:provider/provider.dart';
-import 'package:animations/animations.dart';
 
 TextEditingController titleController = TextEditingController();
 TextEditingController contentController = TextEditingController();

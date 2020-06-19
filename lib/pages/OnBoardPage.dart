@@ -17,7 +17,6 @@ class OnBoardPage extends StatefulWidget {
 class _OnBoardPageState extends State<OnBoardPage> {
   int _length = 0;
   int _index = 0;
-  
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +35,10 @@ class _OnBoardPageState extends State<OnBoardPage> {
                       snapshot.data.documents[_index]["contents"]);
                   rewards = new List<String>.from(
                       snapshot.data.documents[_index]["rewards"]);
-                  log_rewards = new List<String>.from(snapshot.data.documents[_index]["log_rewards"]);
-                  log_titles = new List<String>.from(snapshot.data.documents[_index]["log_titles"]);
+                  log_rewards = new List<String>.from(
+                      snapshot.data.documents[_index]["log_rewards"]);
+                  log_titles = new List<String>.from(
+                      snapshot.data.documents[_index]["log_titles"]);
                 }
               }
             }
@@ -50,6 +51,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
             }).whenComplete(() {
               findUser(_length);
             });
+
             return Scaffold(
               floatingActionButton: FloatingActionButton(
                 onPressed: () {
@@ -172,8 +174,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
                                     height: 18,
                                     color: Colors.transparent,
                                   ),
-                                  itemBuilder:
-                                      (BuildContext context, int index) {
+                                  itemBuilder: (BuildContext context, int index) {
                                     return ToDoCard(
                                       title: titles[index],
                                       content: contents[index],

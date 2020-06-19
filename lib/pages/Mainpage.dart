@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:iusefully/PageSlideAnimation.dart';
-import 'package:iusefully/auth.dart';
 import 'package:iusefully/pages/OnBoardPage.dart';
 import 'package:iusefully/pages/RewardsPage.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class Mainfile extends StatefulWidget{
-  static int currentIndex = 0; // bug?
+  static int currentIndex = 0;
 
   @override
   _MainfileState createState() => _MainfileState();
@@ -20,12 +17,11 @@ class _MainfileState extends State<Mainfile> {
 
   @override
   Widget build(BuildContext context) {
+    
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.light
     ));
-    // Color(0xFF5B16D0),
-    
 
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
@@ -44,6 +40,7 @@ class _MainfileState extends State<Mainfile> {
         unselectedLabelStyle: TextStyle(fontFamily: "NotoSans"),
         elevation: 20,
         items: [
+          
           BottomNavigationBarItem(
             title: Text("On Board"),
             icon: Icon(Icons.assignment, size: 38),
